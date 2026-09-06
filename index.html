@@ -1,0 +1,3421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Freshers' Programme 2026 | Hailakandi Polytechnic
+    </title>
+
+
+    <!-- =====================================================
+         EMAILJS
+         ===================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    
+	
+	
+	
+	
+	
+	<style>
+
+/* =========================================================
+   FRESHERS' PROGRAMME 2026
+   PREMIUM MODERN DESIGN + ANIMATED BACKGROUND
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    padding: 25px 15px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #1f2937;
+
+    /* Animated Freshers Background */
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(236, 72, 153, 0.35),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(59, 130, 246, 0.35),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(139, 92, 246, 0.35),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #080b24,
+            #17104b,
+            #2e1065,
+            #111827
+        );
+
+    background-size:
+        180% 180%,
+        180% 180%,
+        180% 180%,
+        300% 300%;
+
+    animation:
+        backgroundMove 14s ease-in-out infinite alternate;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   ANIMATED BACKGROUND
+   ========================================================= */
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(5px);
+}
+
+body::before {
+    width: 280px;
+    height: 280px;
+
+    top: 5%;
+    left: -100px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(236, 72, 153, 0.35),
+            transparent 70%
+        );
+
+    animation:
+        floatingOrb 9s ease-in-out infinite;
+}
+
+body::after {
+    width: 350px;
+    height: 350px;
+
+    right: -130px;
+    bottom: 5%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(59, 130, 246, 0.35),
+            transparent 70%
+        );
+
+    animation:
+        floatingOrb 11s ease-in-out infinite reverse;
+}
+
+
+@keyframes backgroundMove {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    50% {
+        background-position:
+            30% 30%,
+            70% 20%,
+            30% 70%,
+            50% 50%;
+    }
+
+    100% {
+        background-position:
+            70% 70%,
+            20% 60%,
+            80% 20%,
+            100% 50%;
+    }
+}
+
+
+@keyframes floatingOrb {
+
+    0%,
+    100% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate(40px, -35px)
+            scale(1.15);
+    }
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container {
+    position: relative;
+
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 26px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.40),
+        0 0 0 1px rgba(255, 255, 255, 0.15);
+
+    animation:
+        containerAppear 0.8s ease-out;
+}
+
+
+@keyframes containerAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+    position: relative;
+
+    text-align: center;
+
+    padding: 38px 25px 32px;
+
+    color: white;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #312e81,
+            #6d28d9,
+            #9333ea,
+            #db2777
+        );
+
+    background-size: 250% 250%;
+
+    animation:
+        headerGradient 10s ease infinite;
+}
+
+
+@keyframes headerGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Decorative circles */
+
+.header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -120px;
+    left: -70px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    animation:
+        headerFloat 8s ease-in-out infinite;
+}
+
+
+.header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -70px;
+    bottom: -100px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    animation:
+        headerFloat 7s ease-in-out infinite reverse;
+}
+
+
+@keyframes headerFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, -15px);
+    }
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.header img {
+    position: relative;
+    z-index: 2;
+
+    width: 92px;
+    height: 92px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 50%;
+
+    padding: 6px;
+
+    margin-bottom: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    animation:
+        logoFloat 4s ease-in-out infinite;
+}
+
+
+@keyframes logoFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+
+/* =========================================================
+   HEADER TEXT
+   ========================================================= */
+
+.header h1 {
+    position: relative;
+    z-index: 2;
+
+    margin: 5px 0;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+
+    text-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.header h2 {
+    position: relative;
+    z-index: 2;
+
+    margin: 7px 0;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    opacity: 0.98;
+}
+
+
+.header p {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    opacity: 0.90;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   COLLEGE PHOTO
+   ========================================================= */
+
+.college-photo {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #111827;
+}
+
+
+.college-photo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.18)
+        );
+
+    pointer-events: none;
+}
+
+
+.college-photo img {
+    width: 100%;
+    height: 530px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.8s ease;
+}
+
+
+.college-photo:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+form {
+    padding: 30px;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+   ========================================================= */
+
+.section-title {
+    margin: 0 0 20px;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    color: #312e81;
+
+    border-left:
+        5px solid #8b5cf6;
+
+    padding-left: 12px;
+}
+
+
+/* =========================================================
+   INPUT GROUP
+   ========================================================= */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    color: #374151;
+}
+
+
+.required {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+input[type="text"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #a78bfa;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #7c3aed;
+
+    box-shadow:
+        0 0 0 4px rgba(124, 58, 237, 0.12);
+
+    transform: translateY(-1px);
+}
+
+
+textarea {
+    resize: vertical;
+
+    min-height: 90px;
+}
+
+
+/* =========================================================
+   EVENT INFO
+   ========================================================= */
+
+.event-info {
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f3ff,
+            #faf5ff
+        );
+
+    border:
+        1px solid #ddd6fe;
+
+    border-radius: 14px;
+
+    padding: 17px;
+
+    margin-bottom: 22px;
+
+    color: #4c1d95;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    box-shadow:
+        0 5px 18px rgba(109, 40, 217, 0.06);
+}
+
+
+/* =========================================================
+   EVENTS GRID
+   ========================================================= */
+
+.events {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+}
+
+
+/* =========================================================
+   EVENT BOX
+   ========================================================= */
+
+.event-box {
+    border:
+        1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.055);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.event-box:hover {
+    transform: translateY(-3px);
+
+    border-color: #c4b5fd;
+
+    box-shadow:
+        0 10px 25px rgba(76, 29, 149, 0.10);
+}
+
+
+/* =========================================================
+   EVENT CARD
+   ========================================================= */
+
+.event-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 11px;
+
+    padding: 17px;
+
+    min-height: 72px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease;
+}
+
+
+.event-card:hover {
+    background: #faf9ff;
+}
+
+
+.event-card.selected {
+    background:
+        linear-gradient(
+            135deg,
+            #f5f3ff,
+            #ede9fe
+        );
+}
+
+
+.event-card input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+
+    margin-top: 2px;
+
+    accent-color: #6d28d9;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+.event-card span {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    line-height: 1.45;
+}
+
+
+.event-card strong {
+    color: #1f2937;
+}
+
+
+/* =========================================================
+   FIRST SEMESTER LABEL
+   ========================================================= */
+
+.only-first {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+
+    background:
+        #fee2e2;
+
+    color:
+        #b91c1c;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   EVENT DETAILS
+   ========================================================= */
+
+.event-details {
+    padding: 19px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fafafa
+        );
+
+    border-top:
+        1px solid #eee;
+
+    animation:
+        detailsOpen 0.3s ease;
+}
+
+
+@keyframes detailsOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.event-details .input-group {
+    margin-bottom: 14px;
+}
+
+
+.event-details .input-group:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RULES BUTTON
+   ========================================================= */
+
+.rules-btn {
+    width:
+        calc(100% - 30px);
+
+    margin:
+        0 15px 15px;
+
+    padding: 11px 13px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        #f3f4f6;
+
+    color:
+        #4338ca;
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition:
+        all 0.25s ease;
+}
+
+
+.rules-btn:hover {
+    background:
+        #e0e7ff;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================================
+   RULES CONTENT
+   ========================================================= */
+
+.rules-content {
+    display: none;
+
+    padding: 17px;
+
+    border-top:
+        1px solid #eee;
+
+    background:
+        #fafafa;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+.rules-content.show {
+    display: block;
+}
+
+
+.rules-content ul {
+    padding-left: 20px;
+
+    margin-top: 8px;
+
+    margin-bottom: 0;
+}
+
+
+.rules-content li {
+    margin-bottom: 7px;
+}
+
+
+.warning {
+    background:
+        #fff7ed;
+
+    color:
+        #c2410c;
+
+    border:
+        1px solid #fed7aa;
+
+    padding: 11px;
+
+    border-radius: 9px;
+
+    margin-bottom: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   IMPORTANT NOTE
+   ========================================================= */
+
+.important-note {
+    margin-top: 27px;
+
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffbeb,
+            #fefce8
+        );
+
+    border:
+        1px solid #fde68a;
+
+    border-radius: 14px;
+
+    color:
+        #78350f;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    box-shadow:
+        0 5px 15px rgba(120, 53, 15, 0.05);
+}
+
+
+.important-note strong {
+    font-size: 15px;
+}
+
+
+.important-note ul {
+    padding-left: 20px;
+
+    margin-top: 8px;
+
+    margin-bottom: 0;
+}
+
+
+.important-note li {
+    margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.submit-btn {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 27px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #7c3aed,
+            #db2777
+        );
+
+    background-size:
+        200% 200%;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+    animation:
+        buttonGradient 5s ease infinite;
+}
+
+
+@keyframes buttonGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.submit-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.25),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    animation:
+        buttonShine 3s infinite;
+}
+
+
+@keyframes buttonShine {
+
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 140%;
+    }
+
+    100% {
+        left: 140%;
+    }
+}
+
+
+.submit-btn:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 28px rgba(109, 40, 217, 0.30);
+}
+
+
+.submit-btn:active {
+    transform:
+        translateY(0);
+}
+
+
+.submit-btn:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+
+#message {
+    margin-top: 15px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+#message.success {
+    padding: 14px;
+
+    background:
+        #ecfdf5;
+
+    color:
+        #047857;
+
+    border:
+        1px solid #a7f3d0;
+}
+
+
+#message.error {
+    padding: 14px;
+
+    background:
+        #fef2f2;
+
+    color:
+        #b91c1c;
+
+    border:
+        1px solid #fecaca;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    text-align: center;
+
+    padding: 19px;
+
+    background:
+        #f9fafb;
+
+    color:
+        #6b7280;
+
+    font-size: 13px;
+
+    border-top:
+        1px solid #f0f0f0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        border-radius: 18px;
+    }
+
+    .header {
+        padding: 30px 18px 27px;
+    }
+
+    .header img {
+        width: 78px;
+        height: 78px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header h2 {
+        font-size: 17px;
+    }
+
+    .header p {
+        font-size: 13px;
+    }
+
+    .college-photo img {
+        height: 200px;
+    }
+
+    form {
+        padding: 19px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .events {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .event-card {
+        padding: 15px;
+    }
+
+    .event-details {
+        padding: 16px;
+    }
+
+    .important-note {
+        padding: 15px;
+    }
+
+    .submit-btn {
+        padding: 15px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    body {
+        padding: 6px;
+    }
+
+    .container {
+        border-radius: 14px;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .header h2 {
+        font-size: 15px;
+    }
+
+    .college-photo img {
+        height: 175px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+</style>
+	
+	
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <div class="header">
+
+        <img
+            src="images.jpg"
+            alt="Hailakandi Polytechnic Logo"
+        >
+
+        <div style="font-size:30px;">
+            
+        </div>
+
+        <h1>
+            Freshers' Programme
+        </h1>
+
+        <h2>
+            9 September 2026
+        </h2>
+
+        <p>
+            Hailakandi Polytechnic
+        </p>
+
+        <p>
+            Student Event Registration
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         COLLEGE PHOTO
+         ===================================================== -->
+
+    <div class="college-photo">
+
+        <img
+            src="hk.jpg"
+            alt="Hailakandi Polytechnic"
+        >
+
+    </div>
+
+
+
+    <!-- =====================================================
+         REGISTRATION FORM
+         ===================================================== -->
+
+    <form id="registrationForm">
+
+
+        <!-- =================================================
+             STUDENT DETAILS
+             ================================================= -->
+
+        <h2 class="section-title">
+            Student Information
+        </h2>
+
+
+        <div class="input-group">
+
+            <label for="name">
+                Full Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label for="roll">
+                Roll No.
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="roll"
+                name="roll"
+                placeholder="Enter your roll number"
+                required
+            >
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label for="branch">
+                Branch
+                <span class="required">*</span>
+            </label>
+
+            <select
+                id="branch"
+                name="branch"
+                required
+            >
+
+                <option value="">
+                    Select Branch
+                </option>
+
+                <option value="CSE">
+                    Computer Science & Engineering
+                </option>
+
+                <option value="Electrical">
+                    Electrical Engineering
+                </option>
+
+                <option value="Civil">
+                    Civil Engineering
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label for="semester">
+                Semester
+                <span class="required">*</span>
+            </label>
+
+            <select
+                id="semester"
+                name="semester"
+                required
+            >
+
+                <option value="">
+                    Select Semester
+                </option>
+
+                <option value="1st Semester">
+                    1st Semester
+                </option>
+
+                <option value="3rd Semester">
+                    3rd Semester
+                </option>
+
+                <option value="5th Semester">
+                    5th Semester
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label for="mobile">
+                Mobile Number
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                maxlength="10"
+                inputmode="numeric"
+                placeholder="Enter 10-digit mobile number"
+                required
+            >
+
+        </div>
+
+
+
+        <!-- =================================================
+             EVENT SECTION
+             ================================================= -->
+
+        <h2 class="section-title">
+            Select Events
+        </h2>
+
+
+        <div class="event-info">
+
+            <strong>🎉 Freshers' Programme Events</strong>
+
+            <br>
+
+            Select one or more events in which you want
+            to participate.
+
+            <br>
+
+            <strong>
+                Note:
+            </strong>
+
+            Mr. & Miss Fresher Competition and Games
+            are only for 1st Semester students.
+
+        </div>
+
+
+
+        <div class="events">
+
+
+            <!-- =================================================
+                 1. SOLO SINGING
+                 ================================================= -->
+
+            <div class="event-box">
+
+                <label class="event-card">
+
+                    <input
+                        type="checkbox"
+                        name="events"
+                        value="Solo Singing"
+                        onchange="showEventDetails('soloSingingDetails', this)"
+                    >
+
+                    <span>
+                        
+                        <strong>
+                            Solo Singing
+                        </strong>
+                    </span>
+
+                </label>
+
+
+                <div
+                    id="soloSingingDetails"
+                    class="event-details"
+                    style="display:none;"
+                >
+
+                    <div class="input-group">
+
+                        <label>
+                            Participant Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            name="solo_singing_participant"
+                            placeholder="Enter participant name"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Song Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            name="solo_singing_song"
+                            placeholder="Enter song name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="rules-btn"
+                    onclick="toggleRules('rules1')"
+                >
+                    View Rules & Details
+                </button>
+
+
+                <div
+                    id="rules1"
+                    class="rules-content"
+                >
+
+                    <ul>
+
+                        <li>
+                            Participant will perform a solo song.
+                        </li>
+
+                        <li>
+                            Song name must be mentioned during registration.
+                        </li>
+
+                        <li>
+                            Performance should be suitable for the college programme.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 2. SOLO DANCE
+                 ================================================= -->
+
+            <div class="event-box">
+
+                <label class="event-card">
+
+                    <input
+                        type="checkbox"
+                        name="events"
+                        value="Solo Dance"
+                        onchange="showEventDetails('soloDanceDetails', this)"
+                    >
+
+                    <span>
+                        
+                        <strong>
+                            Solo Dance
+                        </strong>
+                    </span>
+
+                </label>
+
+
+                <div
+                    id="soloDanceDetails"
+                    class="event-details"
+                    style="display:none;"
+                >
+
+                    <div class="input-group">
+
+                        <label>
+                            Participant Name
+                            <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            name="solo_dance_participant"
+                            placeholder="Enter participant name"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                       <label>
+    Type of Dance
+    <span class="required">*</span>
+</label>
+
+<input
+    type="text"
+    name="solo_dance_type"
+    placeholder="e.g. Hip-Hop, Classical, Freestyle"
+>
+
+</div>
+
+
+<div class="input-group">
+
+    <label>
+        Song Name
+        <span class="required">*</span>
+    </label>
+
+    <input
+        type="text"
+        name="solo_dance_song"
+        placeholder="Enter song name"
+    >
+
+</div>
+
+</div>
+
+
+<button
+    type="button"
+    class="rules-btn"
+    onclick="toggleRules('rules2')"
+>
+    View Rules & Details
+</button>
+
+
+<div
+    id="rules2"
+    class="rules-content"
+>
+
+    <ul>
+
+        <li>
+            Participant will perform a solo dance.
+        </li>
+
+        <li>
+            Dance type and song name should be mentioned.
+        </li>
+
+        <li>
+            Performance should be decent and suitable
+            for the college programme.
+        </li>
+
+    </ul>
+
+</div>
+
+</div>
+
+
+
+<!-- =================================================
+     3. GROUP SINGING
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Group Singing"
+            onchange="showEventDetails('groupSingingDetails', this)"
+        >
+
+        <span>
+            
+            <strong>
+                Group Singing
+            </strong>
+        </span>
+
+    </label>
+
+
+    <div
+        id="groupSingingDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Group Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="group_singing_name"
+                placeholder="Enter group name"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Song Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="group_singing_song"
+                placeholder="Enter song name"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Group Members
+                <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="group_singing_members"
+                rows="3"
+                placeholder="Enter names of all group members"
+            ></textarea>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules3')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules3"
+        class="rules-content"
+    >
+
+        <ul>
+
+            <li>
+                Group members must be mentioned during registration.
+            </li>
+
+            <li>
+                Song name must be mentioned.
+            </li>
+
+            <li>
+                All members should participate in the performance.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- =================================================
+     4. GROUP DANCE
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Group Dance"
+            onchange="showEventDetails('groupDanceDetails', this)"
+        >
+
+        <span>
+            
+            <strong>
+                Group Dance
+            </strong>
+        </span>
+
+    </label>
+
+
+    <div
+        id="groupDanceDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Group Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="group_dance_name"
+                placeholder="Enter group name"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Type of Dance
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="group_dance_type"
+                placeholder="e.g. Hip-Hop, Freestyle, Classical"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Song Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="group_dance_song"
+                placeholder="Enter song name"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Group Members
+                <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="group_dance_members"
+                rows="3"
+                placeholder="Enter names of all group members"
+            ></textarea>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules4')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules4"
+        class="rules-content"
+    >
+
+        <ul>
+
+            <li>
+                Group members must be mentioned during registration.
+            </li>
+
+            <li>
+                Dance type and song name must be mentioned.
+            </li>
+
+            <li>
+                Performance should be suitable for the college programme.
+            </li>
+
+            <li>
+                All members should participate in the performance.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================================
+     5. MR. & MISS FRESHER COMPETITION
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Mr. & Miss Fresher Competition"
+            class="first-sem-event"
+            onchange="showEventDetails('fresherDetails', this)"
+        >
+
+        <span>
+
+            
+            <strong>
+                Mr. & Miss Fresher Competition
+            </strong>
+
+            <small class="only-first">
+                ONLY FOR 1ST SEMESTER
+            </small>
+
+        </span>
+
+    </label>
+
+
+    <div
+        id="fresherDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Participant Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="fresher_participant"
+                placeholder="Enter participant name"
+            >
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules5')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules5"
+        class="rules-content"
+    >
+
+        <div class="warning">
+            ⚠️ Only for 1st Semester Students
+        </div>
+
+
+        <b>
+            Round 1 – Introduction
+        </b>
+
+        <ul>
+
+            <li>
+                Each participant gets 30 seconds
+                to introduce themselves in a unique way.
+            </li>
+
+        </ul>
+
+
+        <b>
+            Round 2 – Ramp Walk
+        </b>
+
+        <ul>
+
+            <li>
+                Participants walk the ramp individually.
+            </li>
+
+            <li>
+                Judges will assess confidence,
+                posture, personality and stage presence.
+            </li>
+
+        </ul>
+
+
+        <b>
+            Round 3 – Talent Round
+        </b>
+
+        <ul>
+
+            <li>
+                1-minute talent performance.
+            </li>
+
+            <li>
+                Singing, dancing, mimicry, poetry,
+                storytelling or other suitable talents.
+            </li>
+
+        </ul>
+
+
+        <b>
+            Final Question from Judges
+        </b>
+
+        <ul>
+
+            <li>
+                Participants will answer one meaningful
+                question from the judges.
+            </li>
+
+            <li>
+                Confidence, communication and presence
+                of mind will be assessed.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+<!-- =================================================
+     6.1 MEMORY TRAY CHALLENGE
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Memory Tray Challenge"
+            class="first-sem-event"
+            onchange="showEventDetails('memoryDetails', this)"
+        >
+
+        <span>
+
+            
+            <strong>
+                Memory Tray Challenge
+            </strong>
+
+            <small class="only-first">
+                ONLY FOR 1ST SEMESTER
+            </small>
+
+        </span>
+
+    </label>
+
+
+    <div
+        id="memoryDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Participant Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="memory_participant"
+                placeholder="Enter participant name"
+            >
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules6')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules6"
+        class="rules-content"
+    >
+
+        <div class="warning">
+            ⚠️ Only for 1st Semester Students
+        </div>
+
+        <ul>
+
+            <li>
+                10–15 items will be shown to the participant.
+            </li>
+
+            <li>
+                Items will be shown for 30 seconds.
+            </li>
+
+            <li>
+                After the tray is covered/removed,
+                participants get 1 minute to name or write the items.
+            </li>
+
+            <li>
+                1 point will be given for each correct item.
+            </li>
+
+            <li>
+                The participant with the highest score wins.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================================
+     6.2 PICK & SPEAK
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Pick & Speak"
+            class="first-sem-event"
+            onchange="showEventDetails('speakDetails', this)"
+        >
+
+        <span>
+
+            
+            <strong>
+                Pick & Speak
+            </strong>
+
+            <small class="only-first">
+                ONLY FOR 1ST SEMESTER
+            </small>
+
+        </span>
+
+    </label>
+
+
+    <div
+        id="speakDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Participant Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="pick_speak_participant"
+                placeholder="Enter participant name"
+            >
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules7')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules7"
+        class="rules-content"
+    >
+
+        <div class="warning">
+            ⚠️ Only for 1st Semester Students
+        </div>
+
+        <ul>
+
+            <li>
+                Participant will pick a topic.
+            </li>
+
+            <li>
+                30 seconds will be given for thinking.
+            </li>
+
+            <li>
+                Participant has to speak for 2 minutes.
+            </li>
+
+            <li>
+                Mobile phones and notes are not allowed.
+            </li>
+
+        </ul>
+
+
+        <b>
+            Judging Criteria:
+        </b>
+
+        <ul>
+
+            <li>
+                Confidence
+            </li>
+
+            <li>
+                Communication
+            </li>
+
+            <li>
+                Creativity
+            </li>
+
+            <li>
+                Content
+            </li>
+
+            <li>
+                Body Language
+            </li>
+
+        </ul>
+
+
+        <b>
+            Highest overall score wins.
+        </b>
+
+    </div>
+
+</div>
+
+
+<!-- =================================================
+     7. DRAMA / SKIT
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Drama / Skit"
+            onchange="showEventDetails('dramaDetails', this)"
+        >
+
+        <span>
+            
+            <strong>Drama / Skit</strong>
+        </span>
+
+    </label>
+
+
+    <div
+        id="dramaDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Individual / Group
+                <span class="required">*</span>
+            </label>
+
+            <select name="drama_type">
+
+                <option value="">
+                    Select Type
+                </option>
+
+                <option value="Individual">
+                    Individual
+                </option>
+
+                <option value="Group">
+                    Group
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Participant / Group Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="drama_name"
+                placeholder="Enter participant or group name"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Topic / Theme
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="drama_topic"
+                placeholder="Enter topic or theme"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Participants
+                <span class="required">*</span>
+            </label>
+
+            <textarea
+                name="drama_participants"
+                rows="3"
+                placeholder="Enter names of all participants"
+            ></textarea>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules9')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules9"
+        class="rules-content"
+    >
+
+        <b>Performance:</b> Individual or Group
+
+        <br><br>
+
+        <ul>
+
+            <li>
+                Topic/Theme should be mentioned during registration.
+            </li>
+
+            <li>
+                Names of participants should be submitted.
+            </li>
+
+            <li>
+                Performance should be suitable for the college programme.
+            </li>
+
+            <li>
+                Content should maintain proper discipline and decorum.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- =================================================
+     8. OTHER FUN ACTIVITIES / GAMES
+     ================================================= -->
+
+<div class="event-box">
+
+    <label class="event-card">
+
+        <input
+            type="checkbox"
+            name="events"
+            value="Other Fun Activities / Games"
+            onchange="showEventDetails('otherDetails', this)"
+        >
+
+        <span>
+            
+            <strong>Other Fun Activities / Games</strong>
+        </span>
+
+    </label>
+
+
+    <div
+        id="otherDetails"
+        class="event-details"
+        style="display:none;"
+    >
+
+        <div class="input-group">
+
+            <label>
+                Participant Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="other_participant"
+                placeholder="Enter participant name"
+            >
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Activity / Game Name
+                <span class="required">*</span>
+            </label>
+
+            <input
+                type="text"
+                name="other_activity"
+                placeholder="Activity / Game name (if known)"
+            >
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="rules-btn"
+        onclick="toggleRules('rules10')"
+    >
+        View Rules & Details
+    </button>
+
+
+    <div
+        id="rules10"
+        class="rules-content"
+    >
+
+        <p>
+            Other fun activities and games will be decided by the
+            organizing team during the Freshers' Programme.
+        </p>
+
+        <br>
+
+        <b>
+            Participants must follow the instructions of the organizers.
+        </b>
+
+    </div>
+
+</div>
+
+<!-- IMPORTANT INSTRUCTIONS -->
+
+<div class="important-note">
+
+    <strong>📌 Important Instructions</strong>
+
+    <ul>
+        <li>Students may select multiple events.</li>
+        <li>Please select only the event(s) in which you are willing to participate.</li>
+        <li>Mr. & Miss Fresher Competition and Games are only for 1st Semester students.</li>
+        <li>All performances must be decent and appropriate for the college programme.</li>
+        <li>Participants must follow the instructions of the organizing team and judges.</li>
+        <li>Final decision of the judges/organizing team will be considered final.</li>
+    </ul>
+
+</div>
+
+
+<!-- SUBMIT BUTTON -->
+
+<button
+    type="submit"
+    id="submitBtn"
+    class="submit-btn"
+>
+    Submit Registration
+</button>
+
+<div id="message"></div>
+
+
+</form>
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+    Freshers' Programme 2026 • Hailakandi Polytechnic
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+/* =================================================
+   EMAILJS CONFIGURATION
+   ================================================= */
+
+const PUBLIC_KEY = "1T1QXZ2cxxFEhjuj4";
+const SERVICE_ID = "service_m6icid5";
+const TEMPLATE_ID = "template_ik639i6";
+
+emailjs.init({
+    publicKey: PUBLIC_KEY
+});
+
+
+/* =================================================
+   CHECK 1ST SEMESTER
+   ================================================= */
+
+function isFirstSemester() {
+
+    const semester =
+        document.getElementById("semester").value;
+
+    return semester === "1st Semester";
+}
+
+
+/* =================================================
+   SET REQUIRED FIELDS
+   ================================================= */
+
+function setRequiredFields(container, required) {
+
+    if (!container) return;
+
+    const fields =
+        container.querySelectorAll(
+            "input, select, textarea"
+        );
+
+    fields.forEach(function(field) {
+        field.required = required;
+    });
+}
+
+
+/* =================================================
+   CLEAR EVENT FIELDS
+   ================================================= */
+
+function clearFields(container) {
+
+    if (!container) return;
+
+    const fields =
+        container.querySelectorAll(
+            "input, select, textarea"
+        );
+
+    fields.forEach(function(field) {
+
+        if (
+            field.type === "checkbox" ||
+            field.type === "radio"
+        ) {
+            field.checked = false;
+        } else {
+            field.value = "";
+        }
+
+        field.required = false;
+    });
+}
+
+
+/* =================================================
+   SHOW / HIDE EVENT DETAILS
+   ================================================= */
+
+function showEventDetails(id, checkbox) {
+
+    const details =
+        document.getElementById(id);
+
+    if (!details) return;
+
+
+    /* First semester only event */
+
+    if (
+        checkbox.checked &&
+        checkbox.classList.contains("first-sem-event") &&
+        !isFirstSemester()
+    ) {
+
+        alert(
+            "This event is only available for 1st Semester students."
+        );
+
+        checkbox.checked = false;
+
+        details.style.display = "none";
+
+        setRequiredFields(details, false);
+
+        checkbox
+            .closest(".event-card")
+            ?.classList.remove("selected");
+
+        return;
+    }
+
+
+    /* Show details */
+
+    if (checkbox.checked) {
+
+        details.style.display = "block";
+
+        setRequiredFields(details, true);
+
+        checkbox
+            .closest(".event-card")
+            ?.classList.add("selected");
+
+    }
+
+    /* Hide details */
+
+    else {
+
+        details.style.display = "none";
+
+        setRequiredFields(details, false);
+
+        clearFields(details);
+
+        checkbox
+            .closest(".event-card")
+            ?.classList.remove("selected");
+    }
+}
+
+
+/* =================================================
+   SEMESTER CHANGE
+   ================================================= */
+
+document
+    .getElementById("semester")
+    .addEventListener("change", function() {
+
+        if (!isFirstSemester()) {
+
+            const events =
+                document.querySelectorAll(
+                    ".first-sem-event"
+                );
+
+            events.forEach(function(checkbox) {
+
+                if (checkbox.checked) {
+
+                    checkbox.checked = false;
+
+                    checkbox
+                        .closest(".event-card")
+                        ?.classList.remove("selected");
+
+
+                    const match =
+                        checkbox
+                            .getAttribute("onchange")
+                            ?.match(/'([^']+)'/);
+
+                    if (match) {
+
+                        const details =
+                            document.getElementById(
+                                match[1]
+                            );
+
+                        if (details) {
+
+                            details.style.display =
+                                "none";
+
+                            setRequiredFields(
+                                details,
+                                false
+                            );
+
+                            clearFields(details);
+                        }
+                    }
+                }
+            });
+        }
+    });
+
+
+/* =================================================
+   RULES TOGGLE
+   ================================================= */
+
+function toggleRules(id) {
+
+    const rules =
+        document.getElementById(id);
+
+    if (!rules) return;
+
+    if (rules.style.display === "block") {
+
+        rules.style.display = "none";
+
+    } else {
+
+        rules.style.display = "block";
+    }
+}
+
+/* =================================================
+   FORM SUBMISSION
+   ================================================= */
+
+document
+    .getElementById("registrationForm")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const form = this;
+        const submitBtn =
+            document.getElementById("submitBtn");
+        const message =
+            document.getElementById("message");
+
+        message.innerHTML = "";
+
+
+        /* =================================================
+           STUDENT INFORMATION
+           ================================================= */
+
+        const name =
+            document.getElementById("name").value.trim();
+
+        const roll =
+            document.getElementById("roll").value.trim();
+
+        const branch =
+            document.getElementById("branch").value;
+
+        const semester =
+            document.getElementById("semester").value;
+
+        const mobile =
+            document.getElementById("mobile").value.trim();
+
+
+        /* =================================================
+           MOBILE VALIDATION
+           ================================================= */
+
+        if (!/^[0-9]{10}$/.test(mobile)) {
+
+            message.innerHTML =
+                "❌ Please enter a valid 10-digit mobile number.";
+
+            message.style.color = "red";
+
+            return;
+        }
+
+
+        /* =================================================
+           SELECTED EVENTS
+           ================================================= */
+
+        const selectedCheckboxes =
+            document.querySelectorAll(
+                'input[name="events"]:checked'
+            );
+
+
+        if (selectedCheckboxes.length === 0) {
+
+            message.innerHTML =
+                "❌ Please select at least one event.";
+
+            message.style.color = "red";
+
+            return;
+        }
+
+
+        /* =================================================
+           FIRST SEMESTER EVENT VALIDATION
+           ================================================= */
+
+        for (const checkbox of selectedCheckboxes) {
+
+            if (
+                checkbox.classList.contains("first-sem-event") &&
+                !isFirstSemester()
+            ) {
+
+                message.innerHTML =
+                    "❌ Some selected events are only for 1st Semester students.";
+
+                message.style.color = "red";
+
+                return;
+            }
+        }
+
+
+        /* =================================================
+           FORM VALIDATION
+           ================================================= */
+
+        if (!form.checkValidity()) {
+
+            form.reportValidity();
+
+            return;
+        }
+
+
+        /* =================================================
+           EVENT NAMES
+           ================================================= */
+
+        const selectedEvents = [];
+
+        selectedCheckboxes.forEach(function(checkbox) {
+
+            selectedEvents.push(
+                checkbox.value
+            );
+
+        });
+
+
+        /* =================================================
+           EVENT DETAILS
+           ================================================= */
+
+        const eventDetails = [];
+
+
+        /* ---------- SOLO SINGING ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Solo Singing"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Solo Singing\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="solo_singing_participant"]'
+                ).value.trim() +
+                "\nSong Name: " +
+                document.querySelector(
+                    '[name="solo_singing_song"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- SOLO DANCE ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Solo Dance"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Solo Dance\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="solo_dance_participant"]'
+                ).value.trim() +
+                "\nType of Dance: " +
+                document.querySelector(
+                    '[name="solo_dance_type"]'
+                ).value.trim() +
+                "\nSong Name: " +
+                document.querySelector(
+                    '[name="solo_dance_song"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- GROUP SINGING ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Group Singing"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Group Singing\n" +
+                "Group Name: " +
+                document.querySelector(
+                    '[name="group_singing_name"]'
+                ).value.trim() +
+                "\nSong Name: " +
+                document.querySelector(
+                    '[name="group_singing_song"]'
+                ).value.trim() +
+                "\nGroup Members: " +
+                document.querySelector(
+                    '[name="group_singing_members"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- GROUP DANCE ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Group Dance"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Group Dance\n" +
+                "Group Name: " +
+                document.querySelector(
+                    '[name="group_dance_name"]'
+                ).value.trim() +
+                "\nType of Dance: " +
+                document.querySelector(
+                    '[name="group_dance_type"]'
+                ).value.trim() +
+                "\nSong Name: " +
+                document.querySelector(
+                    '[name="group_dance_song"]'
+                ).value.trim() +
+                "\nGroup Members: " +
+                document.querySelector(
+                    '[name="group_dance_members"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- MR & MISS FRESHER ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Mr. & Miss Fresher Competition"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Mr. & Miss Fresher Competition\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="fresher_participant"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- MEMORY TRAY ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Memory Tray Challenge"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Memory Tray Challenge\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="memory_participant"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- PICK & SPEAK ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Pick & Speak"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Pick & Speak\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="pick_speak_participant"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- CUBE MIXER ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Cube Mixer Challenge"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Cube Mixer Challenge\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="cube_participant"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- DRAMA / SKIT ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Drama / Skit"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Drama / Skit\n" +
+                "Individual / Group: " +
+                document.querySelector(
+                    '[name="drama_type"]'
+                ).value.trim() +
+                "\nParticipant / Group Name: " +
+                document.querySelector(
+                    '[name="drama_name"]'
+                ).value.trim() +
+                "\nTopic / Theme: " +
+                document.querySelector(
+                    '[name="drama_topic"]'
+                ).value.trim() +
+                "\nParticipants: " +
+                document.querySelector(
+                    '[name="drama_participants"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* ---------- OTHER FUN ACTIVITIES ---------- */
+
+        if (
+            document.querySelector(
+                'input[name="events"][value="Other Fun Activities / Games"]:checked'
+            )
+        ) {
+
+            eventDetails.push(
+                "Other Fun Activities / Games\n" +
+                "Participant Name: " +
+                document.querySelector(
+                    '[name="other_participant"]'
+                ).value.trim() +
+                "\nActivity / Game Name: " +
+                document.querySelector(
+                    '[name="other_activity"]'
+                ).value.trim()
+            );
+        }
+
+
+        /* =================================================
+           EMAILJS DATA
+           ================================================= */
+
+        const templateParams = {
+
+            name: name,
+            roll: roll,
+            branch: branch,
+            semester: semester,
+            mobile: mobile,
+
+            events:
+                selectedEvents.join(", "),
+
+            event_details:
+                eventDetails.join("\n\n")
+        };
+
+
+        /* =================================================
+           SUBMITTING
+           ================================================= */
+
+        submitBtn.disabled = true;
+
+        submitBtn.innerText =
+            "Submitting...";
+
+        message.innerHTML =
+            "Please wait...";
+
+        message.style.color =
+            "#555";
+
+
+        /* =================================================
+           SEND EMAIL
+           ================================================= */
+
+        emailjs
+            .send(
+                SERVICE_ID,
+                TEMPLATE_ID,
+                templateParams
+            )
+
+            .then(function(response) {
+
+                console.log(
+                    "SUCCESS!",
+                    response.status,
+                    response.text
+                );
+
+
+                message.innerHTML =
+                    "✅ Registration submitted successfully!";
+
+                message.style.color =
+                    "green";
+
+
+                /* Reset form */
+
+                form.reset();
+
+
+                /* Remove selected style */
+
+                document
+                    .querySelectorAll(".event-card")
+                    .forEach(function(card) {
+
+                        card.classList.remove(
+                            "selected"
+                        );
+                    });
+
+
+                /* Hide event details */
+
+                document
+                    .querySelectorAll(".event-details")
+                    .forEach(function(details) {
+
+                        details.style.display =
+                            "none";
+
+                        setRequiredFields(
+                            details,
+                            false
+                        );
+                    });
+
+
+                submitBtn.disabled = false;
+
+                submitBtn.innerText =
+                    "Submit Registration";
+
+            })
+
+            .catch(function(error) {
+
+                console.error(
+                    "EmailJS Error:",
+                    error
+                );
+
+
+                message.innerHTML =
+                    "❌ Registration failed. Please try again.";
+
+                message.style.color =
+                    "red";
+
+
+                submitBtn.disabled = false;
+
+                submitBtn.innerText =
+                    "Submit Registration";
+
+            });
+
+});
+
+
+/* =================================================
+   PAGE LOAD
+   ================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+        document
+            .querySelectorAll(".event-details")
+            .forEach(function(details) {
+
+                details.style.display =
+                    "none";
+
+                setRequiredFields(
+                    details,
+                    false
+                );
+            });
+
+
+        document
+            .querySelectorAll(".rules-content")
+            .forEach(function(rules) {
+
+                rules.style.display =
+                    "none";
+            });
+
+    });
+
+</script>
